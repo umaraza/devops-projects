@@ -13,6 +13,7 @@ each with source code, a Dockerfile and a step-by-step deployment guide.
 | # | Project | Stack | Deployment |
 |---|---|---|---|
 | 01 | [Portfolio — Nginx & Docker](01-portfolio-nginx-docker/) | HTML, CSS, Nginx | Manual Nginx · Docker (`nginx:alpine`) |
+| 02 | [Laravel Jobs Portal — single Docker container](02-laravel-jobs-portal-docker/) | Laravel 9, PHP 8.5, SQLite, Nginx, PHP-FPM | Docker single container (`php:8.5-fpm-alpine`) |
 
 More projects coming soon.
 
