@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Umar Raza | DevOps & Infrastructure Engineer</title>
+  <meta name="description" content="DevOps Engineer with 5+ years of experience in Linux administration, Terraform, Ansible, CI/CD, Kubernetes, and 24x7 telecom infrastructure." />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Crisp Monospace & Sans Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="brand">
+        <span class="prompt">umar@devops:~$</span><span class="cursor">_</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact" class="btn-nav">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <div class="status-badge">
+            <span class="pulse-dot"></span>
+            <span>SYSTEMS OPERATIONAL • 99%+ SLA COMPLIANCE</span>
+          </div>
+          <h1>Muhammad Umar Raza</h1>
+          <h2>DevOps &amp; Cloud Infrastructure Engineer</h2>
+          <p class="summary">
+            5+ years of hands-on experience engineering high-availability Linux environments, 
+            automating bare-metal and cloud infrastructure with <strong>Terraform &amp; Ansible</strong>, 
+            and maintaining 24x7 production telecom &amp; VoIP platforms across multi-region deployments.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Explore Deployments</a>
+            <a href="https://linkedin.com/in/muhammad-umar-raza-devops" target="_blank" rel="noopener" class="btn btn-secondary">
+              LinkedIn Profile ↗
+            </a>
+          </div>
+          <div class="meta-bar">
+            <span>📍 Islamabad, Pakistan</span>
+            <span>📞 +92 308 5607121</span>
+          </div>
+        </div>
+
+        <!-- Custom Built-in SVG Architecture Graphic (Zero external images needed) -->
+        <div class="hero-visual">
+          <div class="terminal-window">
+            <div class="terminal-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="terminal-title">infra-topology.sh — nginx@prod</span>
+            </div>
+            <div class="terminal-body">
+              <svg viewBox="0 0 420 290" class="arch-svg" xmlns="http://www.w3.org/2000/svg">
+                <!-- Background Grid -->
+                <defs>
+                  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.8"/>
+                  </pattern>
+                </defs>
+                <rect width="420" height="290" fill="url(#grid)" rx="6"/>
+
+                <!-- Connection Lines -->
+                <path d="M 210 55 L 210 95" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 3"/>
+                <path d="M 210 95 L 95 140" stroke="#10b981" stroke-width="2"/>
+                <path d="M 210 95 L 325 140" stroke="#10b981" stroke-width="2"/>
+                <path d="M 95 190 L 95 225" stroke="#64748b" stroke-width="1.5"/>
+                <path d="M 325 190 L 325 225" stroke="#64748b" stroke-width="1.5"/>
+
+                <!-- Node 1: CI/CD & IaC -->
+                <rect x="115" y="15" width="190" height="42" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+                <text x="210" y="34" fill="#f8fafc" font-family="JetBrains Mono, monospace" font-size="11" font-weight="bold" text-anchor="middle">GitLab CI / Terraform</text>
+                <text x="210" y="49" fill="#38bdf8" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="middle">IaC &amp; Automated Pipelines</text>
+
+                <!-- Node 2: Compute / Virtualization -->
+                <rect x="20" y="140" width="150" height="50" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+                <text x="95" y="162" fill="#f8fafc" font-family="JetBrains Mono, monospace" font-size="11" font-weight="bold" text-anchor="middle">AWS &amp; Proxmox VE</text>
+                <text x="95" y="178" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="middle">K8s • Docker • RHEL</text>
+
+                <!-- Node 3: Telecom & Routing -->
+                <rect x="250" y="140" width="150" height="50" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+                <text x="325" y="162" fill="#f8fafc" font-family="JetBrains Mono, monospace" font-size="11" font-weight="bold" text-anchor="middle">HAProxy / Nginx</text>
+                <text x="325" y="178" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="middle">Asterisk • Kannel • USSD</text>
+
+                <!-- Node 4: Observability -->
+                <rect x="20" y="225" width="150" height="45" rx="6" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+                <text x="95" y="245" fill="#f8fafc" font-family="JetBrains Mono, monospace" font-size="10.5" font-weight="bold" text-anchor="middle">Prometheus &amp; Grafana</text>
+                <text x="95" y="260" fill="#f59e0b" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="middle">Nagios • Zabbix • Loki</text>
+
+                <!-- Node 5: Data & Recovery -->
+                <rect x="250" y="225" width="150" height="45" rx="6" fill="#0f172a" stroke="#a855f7" stroke-width="1.5"/>
+                <text x="325" y="245" fill="#f8fafc" font-family="JetBrains Mono, monospace" font-size="10.5" font-weight="bold" text-anchor="middle">MariaDB / MySQL</text>
+                <text x="325" y="260" fill="#c084fc" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="middle">Redis • Automated Backups</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Matrix -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// 01. TECHNICAL STACK</span>
+          <h2>Core Infrastructure &amp; Tooling</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Cloud &amp; IaC</h3>
+            <div class="tags">
+              <span>AWS (EC2, IAM, S3, EBS, CloudWatch)</span>
+              <span>Terraform</span>
+              <span>Ansible</span>
+              <span>Azure (Identity &amp; Governance)</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>Containers &amp; CI/CD</h3>
+            <div class="tags">
+              <span>Docker &amp; Compose</span>
+              <span>Kubernetes</span>
+              <span>Helm</span>
+              <span>Argo CD</span>
+              <span>GitLab CI/CD</span>
+              <span>Jenkins</span>
+              <span>GitHub Actions</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>Observability &amp; Security</h3>
+            <div class="tags">
+              <span>Prometheus</span>
+              <span>Grafana</span>
+              <span>Nagios (NRPE, Fusion)</span>
+              <span>Zabbix</span>
+              <span>Cacti</span>
+              <span>Loki</span>
+              <span>Trivy</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>OS, Virtualization &amp; Storage</h3>
+            <div class="tags">
+              <span>Linux (Ubuntu, Debian, RHEL/CentOS)</span>
+              <span>Proxmox VE</span>
+              <span>VMware</span>
+              <span>RAID (0, 1, 5, 6, 10)</span>
+              <span>LVM</span>
+              <span>Bash &amp; Python</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>Web, Proxy &amp; Databases</h3>
+            <div class="tags">
+              <span>Nginx</span>
+              <span>Apache</span>
+              <span>HAProxy</span>
+              <span>MySQL</span>
+              <span>MariaDB</span>
+              <span>Redis</span>
+              <span>Automated Backup Pipelines</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>Telecom, VoIP &amp; ITSM</h3>
+            <div class="tags">
+              <span>Asterisk (SIP, Dialplans, CDR)</span>
+              <span>IVR &amp; Outbound Dialer (OBD)</span>
+              <span>Kannel SMS Gateway</span>
+              <span>USSD</span>
+              <span>iTop &amp; Jira</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Career Experience Timeline -->
+    <section id="experience" class="section alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// 02. CAREER PROGRESSION</span>
+          <h2>Professional Experience</h2>
+        </div>
+        <div class="timeline">
+          
+          <div class="timeline-item">
+            <div class="timeline-marker active"></div>
+            <div class="timeline-content">
+              <div class="role-header">
+                <div>
+                  <h3>DevOps Engineer</h3>
+                  <span class="company">Mercurial Minds • Islamabad</span>
+                </div>
+                <span class="date-badge">Oct 2025 – Present</span>
+              </div>
+              <ul>
+                <li>Architected full-stack observability by deploying <strong>Prometheus and Grafana</strong> with custom alert rules and specialized visualization plugins.</li>
+                <li>Deployed a self-hosted <strong>GitLab</strong> instance and engineered end-to-end build, test, and deploy CI/CD pipelines for Python applications.</li>
+                <li>Automated bare-metal VM provisioning using <strong>Terraform</strong> and standardized configuration management with <strong>Ansible</strong> on Proxmox VE.</li>
+                <li>Implemented automated disaster recovery schedules for Proxmox VMs/containers and daily database backup jobs.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="role-header">
+                <div>
+                  <h3>System Engineer (SOC / Back Office)</h3>
+                  <span class="company">Mercurial Minds • Islamabad</span>
+                </div>
+                <span class="date-badge">Dec 2022 – Sep 2025</span>
+              </div>
+              <ul>
+                <li>Resolved critical production escalations from the NOC, executing deep call-log investigations and database queries.</li>
+                <li>Administered production Linux servers, web hosting stacks (<strong>Nginx, Apache</strong>), and high-availability <strong>HAProxy</strong> load balancers.</li>
+                <li>Deployed new backend services and configured proactive monitoring checks tailored to service-level requirements.</li>
+                <li>Deployed and administered <strong>iTop ITSM</strong> (managing organizations, users, and workflows) for enterprise client ticketing.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="role-header">
+                <div>
+                  <h3>NOC Engineer (Front Office)</h3>
+                  <span class="company">Mercurial Minds • Islamabad</span>
+                </div>
+                <span class="date-badge">Oct 2021 – Nov 2022</span>
+              </div>
+              <ul>
+                <li>Monitored mission-critical 24x7 production servers and telecom services across <strong>Nagios, Zabbix, and Grafana</strong>.</li>
+                <li>Maintained a <strong>&gt;99% first-response SLA compliance</strong> (under 15 minutes), triaging incidents and coordinating escalations in Jira.</li>
+                <li>Mentored incoming engineers through live incident response scenarios and standard operating procedures.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="role-header">
+                <div>
+                  <h3>Assistant NOC Engineer</h3>
+                  <span class="company">Mercurial Minds • Islamabad</span>
+                </div>
+                <span class="date-badge">Apr 2021 – Sep 2021</span>
+              </div>
+              <ul>
+                <li>Executed bare-metal and virtual Windows/Linux installations, network setup, and baseline server hardening.</li>
+                <li>Supported 24x7 NOC operations with routine health checks and infrastructure maintenance.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// 03. PRODUCTION DEPLOYMENTS</span>
+          <h2>Key Infrastructure &amp; Telecom Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-type">Telecom Scale</span>
+            </div>
+            <h3>Seamless USSD Gateway</h3>
+            <p>Supported deployment and 24x7 operations of a large-scale, multi-vendor USSD gateway architecture spanning <strong>100+ production machines</strong> across multiple countries.</p>
+            <div class="tags">
+              <span>Linux</span><span>USSD</span><span>Multi-Region</span><span>High Availability</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-type">Containers &amp; Cloud</span>
+            </div>
+            <h3>Robotic Process Automation (RPA)</h3>
+            <p>Deployed and operated an enterprise RPA platform (Orchestrator &amp; Process Tray agents) across multiple environments, leading its migration to <strong>Docker</strong>.</p>
+            <div class="tags">
+              <span>Docker</span><span>Orchestration</span><span>Linux</span><span>Migration</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-type">VoIP &amp; SIP</span>
+            </div>
+            <h3>IVR &amp; Outbound Dialer (WebDoc / Breekom)</h3>
+            <p>Engineered Asterisk SIP trunks and custom dialplans, deploying IVR and Outbound Dialer (OBD) applications for partner value-added services.</p>
+            <div class="tags">
+              <span>Asterisk</span><span>SIP Trunks</span><span>IVR / OBD</span><span>Dialplans</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-type">Full-Stack Ops &amp; SIEM</span>
+            </div>
+            <h3>Hard Factory Reset (HFR) Platform</h3>
+            <p>Supported a multi-tier ingestion and analytics system integrating backend/frontend nodes, Kannel SMS gateway, SFTP pipelines, MariaDB, Nagios, and <strong>QRadar</strong> log forwarding.</p>
+            <div class="tags">
+              <span>MariaDB</span><span>Kannel</span><span>QRadar</span><span>Nagios</span><span>SFTP</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-type">AWS Operations</span>
+            </div>
+            <h3>AWJ International RPA Cloud</h3>
+            <p>Provided dedicated AWS operational support for an international RPA deployment, managing EC2 compute lifecycles, Elastic IPs, and zero-downtime EBS volume resizing.</p>
+            <div class="tags">
+              <span>AWS EC2</span><span>EBS</span><span>Networking</span><span>Cloud Ops</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-type">Multi-Region Voice</span>
+            </div>
+            <h3>Customer Care IVR Platform</h3>
+            <p>Maintained and troubleshot complex call-flow routing logic and dynamic customer segmentation across a multi-region telecom customer care platform.</p>
+            <div class="tags">
+              <span>Telecom</span><span>Call Routing</span><span>Multi-Region</span><span>Production Support</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications & Education -->
+    <section id="certifications" class="section alt-bg">
+      <div class="container two-col">
+        <div>
+          <div class="section-header">
+            <span class="section-tag">// 04. CREDENTIALS</span>
+            <h2>Certifications &amp; Courses</h2>
+          </div>
+          <ul class="clean-list">
+            <li><strong>Managing Cloud-native Applications with Kubernetes</strong> — Red Hat / Coursera (Mar 2025)</li>
+            <li><strong>Advanced Docker</strong> — LearnKartS (May 2025)</li>
+            <li><strong>Getting Started with Jenkins</strong> — Simplilearn (Jan 2025)</li>
+            <li><strong>Foundations of Red Hat Cloud-Native Development</strong> — Red Hat / Coursera (Jan 2025)</li>
+            <li><strong>Architecting Solutions on AWS</strong> — AWS / Coursera (Jul 2024)</li>
+            <li><strong>AWS Cloud Technical Essentials</strong> — AWS / Coursera (Apr 2024)</li>
+            <li><strong>Introduction to Python Scripting for DevOps</strong> — Learn Quest / Coursera (Apr 2024)</li>
+            <li><strong>Manage Identities and Governance in Azure</strong> — Whizlabs / Coursera (Jan 2024)</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="section-header">
+            <span class="section-tag">// 05. ACADEMICS</span>
+            <h2>Education &amp; Languages</h2>
+          </div>
+          <div class="edu-card">
+            <h4>Bachelor of Science in Computer Science (BSCS)</h4>
+            <p>Virtual University of Pakistan • 2021 – 2026</p>
+          </div>
+          <div class="edu-card">
+            <h4>Bachelor of Arts</h4>
+            <p>Allama Iqbal Open University • 2018 – 2020</p>
+          </div>
+          <div class="edu-card">
+            <h4>Intermediate in Computer Science (ICS)</h4>
+            <p>Govt Post Graduate College Chakwal • 2016 – 2018</p>
+          </div>
+          <div class="edu-card">
+            <h4>Languages</h4>
+            <p>English (Professional) • Urdu (Native) • Punjabi (Native)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container contact-box">
+        <span class="section-tag">// 06. INITIATE HANDSHAKE</span>
+        <h2>Ready to Automate &amp; Scale Your Infrastructure?</h2>
+        <p>Available for DevOps, Cloud Infrastructure, and Site Reliability Engineering roles.</p>
+        <div class="contact-actions">
+          <a href="mailto:m.umaraza@gmail.com" class="btn btn-primary">m.umaraza@gmail.com</a>
+          <button id="copyEmailBtn" class="btn btn-secondary" onclick="copyEmail()">Copy Email</button>
+          <a href="https://linkedin.com/in/muhammad-umar-raza-devops" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn</a>
+        </div>
+        <span id="copyFeedback" class="copy-feedback"></span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>© 2026 Muhammad Umar Raza. Served via Nginx on Linux.</p>
+      <p class="mono-small">Status: 200 OK</p>
+    </div>
+  </footer>
+
+  <script>
+    function copyEmail() {
+      navigator.clipboard.writeText("m.umaraza@gmail.com");
+      const feedback = document.getElementById("copyFeedback");
+      feedback.textContent = "Copied m.umaraza@gmail.com to clipboard!";
+      setTimeout(() => { feedback.textContent = ""; }, 3000);
+    }
+  </script>
+</body>
+</html>
