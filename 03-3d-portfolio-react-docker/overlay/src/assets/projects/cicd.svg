@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="460" viewBox="0 0 800 460">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#065f46"/><stop offset="1" stop-color="#151030"/></linearGradient>
+<pattern id="p" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.08"/></pattern></defs>
+<rect width="800" height="460" fill="url(#g)"/><rect width="800" height="460" fill="url(#p)"/>
+<text x="50" y="80" font-family="monospace" font-size="22" fill="#00cea8">umar@devops:~$ ./deploy.sh</text>
+<text x="50" y="250" font-family="Arial, sans-serif" font-size="52" font-weight="700" fill="#ffffff">GitLab CI/CD Pipeline</text>
+<text x="50" y="305" font-family="Arial, sans-serif" font-size="26" fill="#dfd9ff">Build, test and deploy for Python</text>
+</svg>
